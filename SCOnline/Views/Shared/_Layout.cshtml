@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/Css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Css/SCOnline.css" rel="stylesheet" />
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+
+    @*  @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)*@
+
+
+</head>
+<body>
+    <div class="container-fluid" style="background: #1e1e1e;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="~/Images/logo.png" style="margin-top: 5px; margin-bottom: 5px;" class="img-responsive" />
+                </div>
+                <div class="col-md-9"></div>
+            </div>
+        </div>
+    </div>
+    @*navbar*@
+    <nav class="navbar-default" style="min-height: 60px; background: #fff;">
+        <div class="container">
+            @* <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>*@
+            <div id="navbar" style="margin-top: 8px;">
+                <ul class="nav navbar-nav" style="font-size: 18px; color: #515151;">
+                    <li><a href="../ForeMent/ElectiveCenter">首页</a></li>
+                    <li><a href="#">直播班</a></li>
+                    <li><a href="#">录播班</a></li>
+                    <li><a href="#">学习广场</a></li>
+                </ul>
+
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div id="body">
+        @RenderSection("featured", required: false)
+        <section class="content-wrapper main-content clear-fix">
+            @RenderBody()
+        </section>
+    </div>
+    <footer>
+        <div class="container-fluid" style="background: #313131; min-height: 100px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12" style="text-align: center; font-size: 18px; margin-top: 60px;">
+                        <span style="background: #76b300; color: #fff; padding: 8px 15px 8px 15px; border-radius: 20px;">
+                            <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+                            服务热线：4000-600-789</span>
+
+                    </div>
+                    <div class="col-md-12" style="text-align: center; color: #616161; margin-top: 30px;">
+                        <a href="#" style="cursor: pointer;">
+                            <img src="~/Images/img_07.png" />
+                        </a>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+              <a href="#" style="cursor: pointer;">
+                  <img src="~/Images/img_09.png" />
+              </a>
+                    </div>
+
+
+                    <div class="col-md-12" style="text-align: center; color: #616161; margin-top: 30px;">
+                        <a href="#" style="cursor: pointer; color: #616161;">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;      <a href="#" style="cursor: pointer; color: #616161;">服务条款</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" style="cursor: pointer; color: #616161;">隐私声明</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" style="cursor: pointer; color: #616161;">网站地图</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" style="cursor: pointer; color: #616161;">联系我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" style="cursor: pointer; color: #616161;">加入我们</a>
+                    </div>
+                    <div class="col-md-12" style="text-align: center; color: #616161; margin-top: 15px; margin-bottom: 50px;">
+                        北京学众信息技术有限公司&nbsp;北京市海淀区王庄路1号&nbsp;版权所有&nbsp;京ICP备13034032号-3&nbsp;All&nbsp; rights&nbsp; reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div>
+        <button onclick="returnTop()" id="btnTop" title="返回顶部">返回顶部</button>
+    </div>
+
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script>
+        // 当网页向下滑动 20px 出现"返回顶部" 按钮
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            console.log(121);
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("btnTop").style.display = "block";
+            } else {
+                document.getElementById("btnTop").style.display = "none";
+            }
+        }
+
+        // 点击按钮，返回顶部
+        function returnTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

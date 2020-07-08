@@ -1,0 +1,14 @@
+D:\期末上机测试一\SCOnline\SCOnline.Service\obj\Debug\SCOnline.Service.csprojResolveAssemblyReference.cache
+D:\期末上机测试一\SCOnline\SCOnline.Service\bin\Debug\SCOnline.Service.dll
+D:\期末上机测试一\SCOnline\SCOnline.Service\bin\Debug\SCOnline.Service.pdb
+D:\期末上机测试一\SCOnline\SCOnline.Service\bin\Debug\SCOnline.Repository.dll
+D:\期末上机测试一\SCOnline\SCOnline.Service\bin\Debug\SCOnline.Repository.pdb
+D:\期末上机测试一\SCOnline\SCOnline.Service\obj\Debug\SCOnline.Service.dll
+D:\期末上机测试一\SCOnline\SCOnline.Service\obj\Debug\SCOnline.Service.pdb
+C:\Users\Administrator\Desktop\SCOnline\SCOnline.Service\bin\Debug\SCOnline.Service.dll
+C:\Users\Administrator\Desktop\SCOnline\SCOnline.Service\bin\Debug\SCOnline.Service.pdb
+C:\Users\Administrator\Desktop\SCOnline\SCOnline.Service\bin\Debug\SCOnline.Repository.dll
+C:\Users\Administrator\Desktop\SCOnline\SCOnline.Service\bin\Debug\SCOnline.Repository.pdb
+C:\Users\Administrator\Desktop\SCOnline\SCOnline.Service\obj\Debug\SCOnline.Service.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\SCOnline\SCOnline.Service\obj\Debug\SCOnline.Service.dll
+C:\Users\Administrator\Desktop\SCOnline\SCOnline.Service\obj\Debug\SCOnline.Service.pdb

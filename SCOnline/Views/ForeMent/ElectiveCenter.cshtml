@@ -1,0 +1,553 @@
+﻿@{
+    ViewBag.Title = "选课中心";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script>
+    $(function () {
+        $('body').on('click', '.check1', function () {
+            $(".check1").removeClass("searchbutton_check");
+            $(this).addClass("searchbutton_check");
+        });
+        $('body').on('click', '.check2', function () {
+            $(".check2").removeClass("searchbutton_check");
+            $(this).addClass("searchbutton_check");
+        });
+    });
+</script>
+@*<div class="test">
+        <ul>
+            <li><a href="1">首页</a></li>
+            <li><a href="2">产品介绍</a></li>
+            <li><a href="3">服务介绍</a></li>
+            <li><a href="4">技术支持</a></li>
+            <li><a href="5">立刻购买</a></li>
+            <li><a href="6">联系我们</a></li>
+        </ul>
+         
+        </div>*@
+<div class="container-fluid" style="background: url(../Images/bg.jpg); min-height: 900px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" style="height: 55px; line-height: 64px;">
+                @*  <ul class="li_center navbar-nav" style="font-size:14px;color:#515151;margin-top:10px;">
+            <li><a href="#" style="padding: 10px 5px 10px 0px;"><span style="color:#636363;">首页</span></a></li>
+                             <li><a href="#" style="padding: 10px 5px 10px 0px;"><span style="color:#636363;">></span></a></li>
+                             <li><a href="#" style="padding: 10px 5px 10px 0px;"><span style="color:#76b300;">选课中心</span></a></li>
+          </ul>*@
+                <div style="font-size: 14px; color: #515151;">
+                    <a href="../ForeMent/ElectiveCenter" style="padding: 10px 5px 10px 0px; text-decoration: none;"><span style="color: #636363;">首页</span></a>
+                    <a href="#" style="padding: 10px 5px 10px 0px; text-decoration: none;"><span style="color: #636363;">></span></a>
+                    <a href="../ForeMent/ElectiveCenter" style="padding: 10px 5px 10px 0px; text-decoration: none;"><span style="color: #76b300;">选课中心</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="background: #fff; margin-bottom: 60px; border: 1px solid #ccc2ae;">
+            <div class="col-md-9" style="margin-top: 20px;">
+                <div class="col-md-12 padding_clear" style="color: #76b300; height: 30px; line-height: 30px; text-align: left;">
+                    <span style="font-size: 16px; font-weight: bolder;">所有课程</span>
+                    <span style="font-size: 16px;">10</span>
+                </div>
+
+                <div class="col-md-12 padding_clear" style="background: #76b300; height: 2px;">
+                </div>
+
+                <div class="col-md-12 padding_clear" style="border: 1px solid #e8e8e8; margin-top: 20px; margin-bottom: 20px;">
+                    <div style="min-height: 45px; line-height: 45px; border-bottom: 1px dashed #dedede">
+                        <div class="col-md-2" style="color: #919191;">分类：</div>
+                        <div class="col-md-10">
+                            <ul class="li_center navbar-nav" style="font-size: 14px; color: #515151;">
+                                <li><a href="#" style="color: #464646;"><span class="searchbutton_check check1">小学奥数</span></a></li>
+                                <li><a href="#" style="color: #464646;"><span class="check1">培优强化班</span></a></li>
+                                <li><a href="#" style="color: #464646;"><span class="check1">中考课程</span></a></li>
+                                <li><a href="#" style="color: #464646;"><span class="check1">知识点微课</span></a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div style="min-height: 45px; line-height: 45px;">
+                        <div class="col-md-2" style="color: #919191;">年级：</div>
+                        <div class="col-md-10">
+                            <ul class="li_center navbar-nav" style="font-size: 14px; color: #515151;">
+                                <li><a href="#" style="color: #464646;"><span class="searchbutton_check check2">全部</span></a></li>
+                                <li><a href="#" style="color: #464646;"><span class="check2">3年级</span></a></li>
+                                <li><a href="#" style="color: #464646;"><span class="check2">4年级</span></a></li>
+                                <li><a href="#" style="color: #464646;"><span class="check2">5年级</span></a></li>
+                                <li><a href="#" style="color: #464646;"><span class="check2">6年级</span></a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-12 padding_clear" style="margin-top: 10px; margin-bottom: 10px;">
+                    <div class="col-md-3">
+                        <img src="~/Images/course1.png" class="img-responsive" />
+                    </div>
+                    <div class="col-md-9">
+                        <div style="width: 100%">
+                            <span style="font-size: 16px; color: #1c1c1c;">新3年级奥数一阶</span>
+                            <span style="background: #61cc08; color: #fff; padding: 1px 2px 2px 2px;">联报优惠</span>
+                            <span style="background: #f38930; color: #fff; padding: 1px 2px 2px 2px;">学霸优惠</span>
+                        </div>
+                        <div style="width: 100%; margin-top: 5px;">
+                            <span style="color: #6f6f6f;">主讲老师：</span>
+                            <span style="color: #6f6f6f;">马敬煜</span>
+                        </div>
+                        <div style="width: 100%;">
+                            <span style="color: #6f6f6f;">课时数：</span>
+                            <span style="color: #6f6f6f;">共22课时（有效期：自购买之日起一年内有效）</span>
+                        </div>
+                        <div style="width: 100%; margin-top: 10px;">
+
+                            <span style="color: #1c1c1c;">学霸优惠价：</span>
+                            <span style="font-size: 18px; color: #f65353; font-weight: bold;">2750</span>
+                            <span style="color: #f65353; font-weight: bold;">学币</span>
+                            <span style="color: #1c1c1c; text-decoration: line-through">2750学币</span>
+                            <span style="color: #1c1c1c;">（¥275）</span>
+
+                            <a href="../ForeMent/ElectiveDetail">
+                                <span style="background: #fff; color: #76b300; padding: 3px 5px 3px 5px; border: 1px solid #e5e5e5; font-size: 16px; float: right; cursor: pointer;">查看详情</span>
+                            </a>
+                            <div class="clearfix"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-12 padding_clear" style="background: #e6e6e6; height: 1px;">
+                </div>
+
+                <div class="col-md-12 padding_clear" style="margin-top: 10px; margin-bottom: 10px;">
+                    <div class="col-md-3">
+                        <img src="~/Images/course2.png" class="img-responsive" />
+                    </div>
+                    <div class="col-md-9">
+                        <div style="width: 100%">
+                            <span style="font-size: 16px; color: #1c1c1c;">新3年级奥数一阶</span>
+                            <span style="background: #61cc08; color: #fff; padding: 1px 2px 2px 2px;">联报优惠</span>
+                            <span style="background: #f38930; color: #fff; padding: 1px 2px 2px 2px;">学霸优惠</span>
+                        </div>
+                        <div style="width: 100%; margin-top: 5px;">
+                            <span style="color: #6f6f6f;">主讲老师：</span>
+                            <span style="color: #6f6f6f;">马敬煜</span>
+                        </div>
+                        <div style="width: 100%;">
+                            <span style="color: #6f6f6f;">课时数：</span>
+                            <span style="color: #6f6f6f;">共22课时（有效期：自购买之日起一年内有效）</span>
+                        </div>
+                        <div style="width: 100%; margin-top: 10px;">
+
+                            <span style="color: #1c1c1c;">学霸优惠价：</span>
+                            <span style="font-size: 18px; color: #f65353; font-weight: bold;">2750</span>
+                            <span style="color: #f65353; font-weight: bold;">学币</span>
+                            <span style="color: #1c1c1c; text-decoration: line-through">2750学币</span>
+                            <span style="color: #1c1c1c;">（¥275）</span>
+
+                            <a href="../ForeMent/ElectiveDetail">
+                                <span style="background: #fff; color: #76b300; padding: 3px 5px 3px 5px; border: 1px solid #e5e5e5; font-size: 16px; float: right; cursor: pointer;">查看详情</span>
+                            </a>
+                            <div class="clearfix"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-12 padding_clear" style="background: #e6e6e6; height: 1px;">
+                </div>
+
+                <div class="col-md-12 padding_clear" style="margin-top: 10px; margin-bottom: 10px;">
+                    <div class="col-md-3">
+                        <img src="~/Images/course3.png" class="img-responsive" />
+                    </div>
+                    <div class="col-md-9">
+                        <div style="width: 100%">
+                            <span style="font-size: 16px; color: #1c1c1c;">新3年级奥数一阶</span>
+                            <span style="background: #61cc08; color: #fff; padding: 1px 2px 2px 2px;">联报优惠</span>
+                            <span style="background: #f38930; color: #fff; padding: 1px 2px 2px 2px;">学霸优惠</span>
+                        </div>
+                        <div style="width: 100%; margin-top: 5px;">
+                            <span style="color: #6f6f6f;">主讲老师：</span>
+                            <span style="color: #6f6f6f;">马敬煜</span>
+                        </div>
+                        <div style="width: 100%;">
+                            <span style="color: #6f6f6f;">课时数：</span>
+                            <span style="color: #6f6f6f;">共22课时（有效期：自购买之日起一年内有效）</span>
+                        </div>
+                        <div style="width: 100%; margin-top: 10px;">
+
+                            <span style="color: #1c1c1c;">学霸优惠价：</span>
+                            <span style="font-size: 18px; color: #f65353; font-weight: bold;">2750</span>
+                            <span style="color: #f65353; font-weight: bold;">学币</span>
+                            <span style="color: #1c1c1c; text-decoration: line-through">2750学币</span>
+                            <span style="color: #1c1c1c;">（¥275）</span>
+
+                            <a href="../ForeMent/ElectiveDetail">
+                                <span style="background: #fff; color: #76b300; padding: 3px 5px 3px 5px; border: 1px solid #e5e5e5; font-size: 16px; float: right; cursor: pointer;">查看详情</span>
+                            </a>
+                            <div class="clearfix"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-12 padding_clear" style="background: #e6e6e6; height: 1px;">
+                </div>
+
+                <div class="col-md-12 padding_clear" style="margin-top: 10px; margin-bottom: 10px;">
+                    <div class="col-md-3">
+                        <img src="~/Images/course4.png" class="img-responsive" />
+                    </div>
+                    <div class="col-md-9">
+                        <div style="width: 100%">
+                            <span style="font-size: 16px; color: #1c1c1c;">新3年级奥数一阶</span>
+                            <span style="background: #61cc08; color: #fff; padding: 1px 2px 2px 2px;">联报优惠</span>
+                            <span style="background: #f38930; color: #fff; padding: 1px 2px 2px 2px;">学霸优惠</span>
+                        </div>
+                        <div style="width: 100%; margin-top: 5px;">
+                            <span style="color: #6f6f6f;">主讲老师：</span>
+                            <span style="color: #6f6f6f;">马敬煜</span>
+                        </div>
+                        <div style="width: 100%;">
+                            <span style="color: #6f6f6f;">课时数：</span>
+                            <span style="color: #6f6f6f;">共22课时（有效期：自购买之日起一年内有效）</span>
+                        </div>
+                        <div style="width: 100%; margin-top: 10px;">
+
+                            <span style="color: #1c1c1c;">学霸优惠价：</span>
+                            <span style="font-size: 18px; color: #f65353; font-weight: bold;">2750</span>
+                            <span style="color: #f65353; font-weight: bold;">学币</span>
+                            <span style="color: #1c1c1c; text-decoration: line-through">2750学币</span>
+                            <span style="color: #1c1c1c;">（¥275）</span>
+
+                            <a href="../ForeMent/ElectiveDetail">
+                                <span style="background: #fff; color: #76b300; padding: 3px 5px 3px 5px; border: 1px solid #e5e5e5; font-size: 16px; float: right; cursor: pointer;">查看详情</span>
+                            </a>
+
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-12 padding_clear" style="background: #e6e6e6; height: 1px;">
+                </div>
+
+                <div class="col-md-12 padding_clear" style="margin-top: 10px; margin-bottom: 10px;">
+                    <div class="col-md-3">
+                        <img src="~/Images/course5.png" class="img-responsive" />
+                    </div>
+                    <div class="col-md-9">
+                        <div style="width: 100%">
+                            <span style="font-size: 16px; color: #1c1c1c;">新3年级奥数一阶</span>
+                            <span style="background: #61cc08; color: #fff; padding: 1px 2px 2px 2px;">联报优惠</span>
+                            <span style="background: #f38930; color: #fff; padding: 1px 2px 2px 2px;">学霸优惠</span>
+                        </div>
+                        <div style="width: 100%; margin-top: 5px;">
+                            <span style="color: #6f6f6f;">主讲老师：</span>
+                            <span style="color: #6f6f6f;">马敬煜</span>
+                        </div>
+                        <div style="width: 100%;">
+                            <span style="color: #6f6f6f;">课时数：</span>
+                            <span style="color: #6f6f6f;">共22课时（有效期：自购买之日起一年内有效）</span>
+                        </div>
+                        <div style="width: 100%; margin-top: 10px;">
+
+                            <span style="color: #1c1c1c;">学霸优惠价：</span>
+                            <span style="font-size: 18px; color: #f65353; font-weight: bold;">2750</span>
+                            <span style="color: #f65353; font-weight: bold;">学币</span>
+                            <span style="color: #1c1c1c; text-decoration: line-through">2750学币</span>
+                            <span style="color: #1c1c1c;">（¥275）</span>
+
+                            <a href="../ForeMent/ElectiveDetail">
+                                <span style="background: #fff; color: #76b300; padding: 3px 5px 3px 5px; border: 1px solid #e5e5e5; font-size: 16px; float: right; cursor: pointer;">查看详情</span>
+                            </a>
+                            <div class="clearfix"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-12 padding_clear" style="background: #e6e6e6; height: 1px;">
+                </div>
+                <div class="col-md-12 padding_clear" style="margin-top: 10px; margin-bottom: 10px;">
+                    <div class="col-md-3">
+                        <img src="~/Images/course1.png" class="img-responsive" />
+                    </div>
+                    <div class="col-md-9">
+                        <div style="width: 100%">
+                            <span style="font-size: 16px; color: #1c1c1c;">新3年级奥数一阶</span>
+                            <span style="background: #61cc08; color: #fff; padding: 1px 2px 2px 2px;">联报优惠</span>
+                            <span style="background: #f38930; color: #fff; padding: 1px 2px 2px 2px;">学霸优惠</span>
+                        </div>
+                        <div style="width: 100%; margin-top: 5px;">
+                            <span style="color: #6f6f6f;">主讲老师：</span>
+                            <span style="color: #6f6f6f;">马敬煜</span>
+                        </div>
+                        <div style="width: 100%;">
+                            <span style="color: #6f6f6f;">课时数：</span>
+                            <span style="color: #6f6f6f;">共22课时（有效期：自购买之日起一年内有效）</span>
+                        </div>
+                        <div style="width: 100%; margin-top: 10px;">
+
+                            <span style="color: #1c1c1c;">学霸优惠价：</span>
+                            <span style="font-size: 18px; color: #f65353; font-weight: bold;">2750</span>
+                            <span style="color: #f65353; font-weight: bold;">学币</span>
+                            <span style="color: #1c1c1c; text-decoration: line-through">2750学币</span>
+                            <span style="color: #1c1c1c;">（¥275）</span>
+
+                            <a href="../ForeMent/ElectiveDetail">
+                                <span style="background: #fff; color: #76b300; padding: 3px 5px 3px 5px; border: 1px solid #e5e5e5; font-size: 16px; float: right; cursor: pointer;">查看详情</span>
+                            </a>
+                            <div class="clearfix"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-12 padding_clear" style="background: #e6e6e6; height: 1px;">
+                </div>
+
+                <div class="col-md-12 padding_clear" style="margin-top: 10px; margin-bottom: 10px;">
+                    <div class="col-md-3">
+                        <img src="~/Images/course2.png" class="img-responsive" />
+                    </div>
+                    <div class="col-md-9">
+                        <div style="width: 100%">
+                            <span style="font-size: 16px; color: #1c1c1c;">新3年级奥数一阶</span>
+                            <span style="background: #61cc08; color: #fff; padding: 1px 2px 2px 2px;">联报优惠</span>
+                            <span style="background: #f38930; color: #fff; padding: 1px 2px 2px 2px;">学霸优惠</span>
+                        </div>
+                        <div style="width: 100%; margin-top: 5px;">
+                            <span style="color: #6f6f6f;">主讲老师：</span>
+                            <span style="color: #6f6f6f;">马敬煜</span>
+                        </div>
+                        <div style="width: 100%;">
+                            <span style="color: #6f6f6f;">课时数：</span>
+                            <span style="color: #6f6f6f;">共22课时（有效期：自购买之日起一年内有效）</span>
+                        </div>
+                        <div style="width: 100%; margin-top: 10px;">
+
+                            <span style="color: #1c1c1c;">学霸优惠价：</span>
+                            <span style="font-size: 18px; color: #f65353; font-weight: bold;">2750</span>
+                            <span style="color: #f65353; font-weight: bold;">学币</span>
+                            <span style="color: #1c1c1c; text-decoration: line-through">2750学币</span>
+                            <span style="color: #1c1c1c;">（¥275）</span>
+
+                            <a href="../ForeMent/ElectiveDetail">
+                                <span style="background: #fff; color: #76b300; padding: 3px 5px 3px 5px; border: 1px solid #e5e5e5; font-size: 16px; float: right; cursor: pointer;">查看详情</span>
+                            </a>
+                            <div class="clearfix"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-12 padding_clear" style="background: #e6e6e6; height: 1px;">
+                </div>
+
+                <div class="col-md-12 padding_clear" style="margin-top: 10px; margin-bottom: 10px;">
+                    <div class="col-md-3">
+                        <img src="~/Images/course3.png" class="img-responsive" />
+                    </div>
+                    <div class="col-md-9">
+                        <div style="width: 100%">
+                            <span style="font-size: 16px; color: #1c1c1c;">新3年级奥数一阶</span>
+                            <span style="background: #61cc08; color: #fff; padding: 1px 2px 2px 2px;">联报优惠</span>
+                            <span style="background: #f38930; color: #fff; padding: 1px 2px 2px 2px;">学霸优惠</span>
+                        </div>
+                        <div style="width: 100%; margin-top: 5px;">
+                            <span style="color: #6f6f6f;">主讲老师：</span>
+                            <span style="color: #6f6f6f;">马敬煜</span>
+                        </div>
+                        <div style="width: 100%;">
+                            <span style="color: #6f6f6f;">课时数：</span>
+                            <span style="color: #6f6f6f;">共22课时（有效期：自购买之日起一年内有效）</span>
+                        </div>
+                        <div style="width: 100%; margin-top: 10px;">
+
+                            <span style="color: #1c1c1c;">学霸优惠价：</span>
+                            <span style="font-size: 18px; color: #f65353; font-weight: bold;">2750</span>
+                            <span style="color: #f65353; font-weight: bold;">学币</span>
+                            <span style="color: #1c1c1c; text-decoration: line-through">2750学币</span>
+                            <span style="color: #1c1c1c;">（¥275）</span>
+
+                            <a href="../ForeMent/ElectiveDetail">
+                                <span style="background: #fff; color: #76b300; padding: 3px 5px 3px 5px; border: 1px solid #e5e5e5; font-size: 16px; float: right; cursor: pointer;">查看详情</span>
+                            </a>
+
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-12 padding_clear" style="background: #e6e6e6; height: 1px;">
+                </div>
+
+                <div class="col-md-12 padding_clear" style="margin-top: 10px; margin-bottom: 10px;">
+                    <div class="col-md-3">
+                        <img src="~/Images/course4.png" class="img-responsive" />
+                    </div>
+                    <div class="col-md-9">
+                        <div style="width: 100%">
+                            <span style="font-size: 16px; color: #1c1c1c;">新3年级奥数一阶</span>
+                            <span style="background: #61cc08; color: #fff; padding: 1px 2px 2px 2px;">联报优惠</span>
+                            <span style="background: #f38930; color: #fff; padding: 1px 2px 2px 2px;">学霸优惠</span>
+                        </div>
+                        <div style="width: 100%; margin-top: 5px;">
+                            <span style="color: #6f6f6f;">主讲老师：</span>
+                            <span style="color: #6f6f6f;">马敬煜</span>
+                        </div>
+                        <div style="width: 100%;">
+                            <span style="color: #6f6f6f;">课时数：</span>
+                            <span style="color: #6f6f6f;">共22课时（有效期：自购买之日起一年内有效）</span>
+                        </div>
+                        <div style="width: 100%; margin-top: 10px;">
+
+                            <span style="color: #1c1c1c;">学霸优惠价：</span>
+                            <span style="font-size: 18px; color: #f65353; font-weight: bold;">2750</span>
+                            <span style="color: #f65353; font-weight: bold;">学币</span>
+                            <span style="color: #1c1c1c; text-decoration: line-through">2750学币</span>
+                            <span style="color: #1c1c1c;">（¥275）</span>
+
+                            <a href="../ForeMent/ElectiveDetail">
+                                <span style="background: #fff; color: #76b300; padding: 3px 5px 3px 5px; border: 1px solid #e5e5e5; font-size: 16px; float: right; cursor: pointer;">查看详情</span>
+                            </a>
+                            <div class="clearfix"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-12 padding_clear" style="background: #e6e6e6; height: 1px;">
+                </div>
+
+                <div class="col-md-12 padding_clear" style="margin-top: 10px; margin-bottom: 10px;">
+                    <div class="col-md-3">
+                        <img src="~/Images/course5.png" class="img-responsive" />
+                    </div>
+                    <div class="col-md-9">
+                        <div style="width: 100%">
+                            <span style="font-size: 16px; color: #1c1c1c;">新3年级奥数一阶</span>
+                            <span style="background: #61cc08; color: #fff; padding: 1px 2px 2px 2px;">联报优惠</span>
+                            <span style="background: #f38930; color: #fff; padding: 1px 2px 2px 2px;">学霸优惠</span>
+                        </div>
+                        <div style="width: 100%; margin-top: 5px;">
+                            <span style="color: #6f6f6f;">主讲老师：</span>
+                            <span style="color: #6f6f6f;">马敬煜</span>
+                        </div>
+                        <div style="width: 100%;">
+                            <span style="color: #6f6f6f;">课时数：</span>
+                            <span style="color: #6f6f6f;">共22课时（有效期：自购买之日起一年内有效）</span>
+                        </div>
+                        <div style="width: 100%; margin-top: 10px;">
+
+                            <span style="color: #1c1c1c;">学霸优惠价：</span>
+                            <span style="font-size: 18px; color: #f65353; font-weight: bold;">2750</span>
+                            <span style="color: #f65353; font-weight: bold;">学币</span>
+                            <span style="color: #1c1c1c; text-decoration: line-through">2750学币</span>
+                            <span style="color: #1c1c1c;">（¥275）</span>
+
+                            <a href="../ForeMent/ElectiveDetail">
+                                <span style="background: #fff; color: #76b300; padding: 3px 5px 3px 5px; border: 1px solid #e5e5e5; font-size: 16px; float: right; cursor: pointer;">查看详情</span>
+                            </a>
+
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-12 padding_clear" style="background: #e6e6e6; height: 1px;">
+                </div>
+                <div class="col-md-12" style="text-align: center; height: 66px; line-height: 66px;">
+                    <span style="color: #969191; font-size: 16px;">第1页、共1页10条</span>
+                    <span style="background: #fff; color: #959595; padding: 3px 5px 3px 5px; border: 1px solid #e5e5e5; font-size: 16px; cursor: pointer;">上一页</span>
+                    <span style="background: #fff; color: #959595; padding: 3px 5px 3px 5px; border: 1px solid #e5e5e5; font-size: 16px; cursor: pointer;">下一页</span>
+                </div>
+
+
+
+            </div>
+            <div class="col-md-3" style="margin-top: 20px;">
+                <div class="col-md-12 padding_clear" style="color: #606060; height: 30px; line-height: 30px; text-align: left;">
+                    <span style="font-size: 16px; font-weight: bolder;">热门资讯</span>
+
+                </div>
+                <div class="col-md-12 padding_clear">
+                    <img src="~/Images/123.jpg" class="img-responsive" />
+
+                </div>
+
+                <a href="../ForeMent/NewsDetail">
+                    <div class="col-md-12 padding_clear" style="height: 36px; line-height: 36px; border-bottom: 1px dashed #dedede;">
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding_clear" style="color: #1e1e1e; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">错题本都有什么门道等等等</div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding_clear" style="color: #b7b7bd; text-align: right">2017-05-22</div>
+                    </div>
+                </a>
+                <a href="../ForeMent/NewsDetail">
+                    <div class="col-md-12 padding_clear" style="height: 36px; line-height: 36px; border-bottom: 1px dashed #dedede;">
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding_clear" style="color: #1e1e1e; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">错题本都有什么门道等等等</div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding_clear" style="color: #b7b7bd; text-align: right">2017-05-22</div>
+                    </div>
+                </a>
+                <a href="../ForeMent/NewsDetail">
+                    <div class="col-md-12 padding_clear" style="height: 36px; line-height: 36px; border-bottom: 1px dashed #dedede;">
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding_clear" style="color: #1e1e1e; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">错题本都有什么门道等等等</div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding_clear" style="color: #b7b7bd; text-align: right">2017-05-22</div>
+                    </div>
+                </a>
+                <a href="../ForeMent/NewsDetail">
+                    <div class="col-md-12 padding_clear" style="height: 36px; line-height: 36px; border-bottom: 1px dashed #dedede;">
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding_clear" style="color: #1e1e1e; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">错题本都有什么门道等等等</div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding_clear" style="color: #b7b7bd; text-align: right">2017-05-22</div>
+                    </div>
+                </a>
+                <a href="../ForeMent/NewsDetail">
+                    <div class="col-md-12 padding_clear" style="height: 36px; line-height: 36px; border-bottom: 1px dashed #dedede;">
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding_clear" style="color: #1e1e1e; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">错题本都有什么门道等等等</div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding_clear" style="color: #b7b7bd; text-align: right">2017-05-22</div>
+                    </div>
+                </a>
+                <a href="../ForeMent/NewsDetail">
+                    <div class="col-md-12 padding_clear" style="height: 36px; line-height: 36px; border-bottom: 1px dashed #dedede;">
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding_clear" style="color: #1e1e1e; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">错题本都有什么门道等等等</div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding_clear" style="color: #b7b7bd; text-align: right">2017-05-22</div>
+                    </div>
+                </a>
+                <a href="../ForeMent/NewsDetail">
+                    <div class="col-md-12 padding_clear" style="height: 36px; line-height: 36px; border-bottom: 1px dashed #dedede;">
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding_clear" style="color: #1e1e1e; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">错题本都有什么门道等等等</div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding_clear" style="color: #b7b7bd; text-align: right">2017-05-22</div>
+                    </div>
+                </a>
+                <a href="../ForeMent/NewsDetail">
+                    <div class="col-md-12 padding_clear" style="height: 36px; line-height: 36px; border-bottom: 1px dashed #dedede;">
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding_clear" style="color: #1e1e1e; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">错题本都有什么门道等等等</div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding_clear" style="color: #b7b7bd; text-align: right">2017-05-22</div>
+                    </div>
+                </a>
+                <a href="../ForeMent/NewsDetail">
+                    <div class="col-md-12 padding_clear" style="height: 36px; line-height: 36px; border-bottom: 1px dashed #dedede;">
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding_clear" style="color: #1e1e1e; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">错题本都有什么门道等等等</div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding_clear" style="color: #b7b7bd; text-align: right">2017-05-22</div>
+                    </div>
+                </a>
+                <a href="../ForeMent/NewsDetail">
+                    <div class="col-md-12 padding_clear" style="height: 36px; line-height: 36px; border-bottom: 1px dashed #dedede;">
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding_clear" style="color: #1e1e1e; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">错题本都有什么门道等等等</div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding_clear" style="color: #b7b7bd; text-align: right">2017-05-22</div>
+                    </div>
+                </a>
+                <a href="../ForeMent/NewsDetail">
+                    <div class="col-md-12 padding_clear" style="height: 36px; line-height: 36px; border-bottom: 1px dashed #dedede;">
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding_clear" style="color: #1e1e1e; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">错题本都有什么门道等等等</div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 padding_clear" style="color: #b7b7bd; text-align: right">2017-05-22</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

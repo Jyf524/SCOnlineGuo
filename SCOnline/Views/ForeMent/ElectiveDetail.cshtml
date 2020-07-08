@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "课程详细";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid" style="background:url(../Images/bg.jpg);">
+<div class="container">
+<div class="row">
+      <div class="col-md-12" style="height:55px;line-height:64px;">
+            @*  <ul class="li_center navbar-nav" style="font-size:14px;color:#515151;margin-top:10px;">
+            <li><a href="#" style="padding: 10px 5px 10px 0px;"><span style="color:#636363;">首页</span></a></li>
+                             <li><a href="#" style="padding: 10px 5px 10px 0px;"><span style="color:#636363;">></span></a></li>
+                             <li><a href="#" style="padding: 10px 5px 10px 0px;"><span style="color:#76b300;">选课中心</span></a></li>
+          </ul>*@
+           <div style="font-size:14px;color:#515151;">
+               <a href="../ForeMent/ElectiveCenter" style="padding: 10px 5px 10px 0px;text-decoration: none;"><span style="color:#636363;">首页</span></a>
+            <a href="#" style="padding: 10px 5px 10px 0px;text-decoration: none;"><span style="color:#636363;">></span></a>
+               <a href="../ForeMent/ElectiveCenter" style="padding: 10px 5px 10px 0px;text-decoration: none;"><span style="color:#636363;">选课中心</span></a>
+                <a href="#" style="padding: 10px 5px 10px 0px;text-decoration: none;"><span style="color:#636363;">></span></a>
+               <a href="../ForeMent/ElectiveDetail" style="padding: 10px 5px 10px 0px;text-decoration: none;"><span style="color:#76b300;">课程详细</span></a>
+           </div>
+       </div>
+</div>
+    <div class="row" style="background:#fff;margin-bottom: 60px;border-top:1px solid #ccc2ae;border-bottom:1px solid #ccc2ae;padding-bottom: 20px;min-height: 480px;">
+        <div class="col-md-5" style="margin-top:10px;">
+            <img src="../Images/cdetail5.jpg" class="img-responsive">
+        </div>
+          <div class="col-md-7" style="margin-top:10px;">
+               <div style="width:100%">
+                              <span style="font-size:20px;color:#393939;font-weight:bold;">新3年级奥数一阶</span>
+                              <span style="color:#a7a7a7;padding: 4px 12px 4px 12px;float:right;cursor:pointer;border-radius:15px;border:1px solid #a7a7a7;">
+                                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                                        <span>加关注</span>
+                                    </span>
+                          </div>
+                          <div style="width:100%;margin-top:16px;">
+                              <span style="color:#636363;font-weight:bold;">主讲老师：</span>
+                             <span style="color:#636363;">马敬煜</span>
+                          </div>
+                          <div style="width:100%;">
+                              <span style="color:#636363;font-weight:bold;">课时数：</span>
+                             <span style="color:#636363;">22课时</span>
+                          </div>
+               <div style="width:100%;">
+                              <span style="color:#636363;font-weight:bold;">课程形式：</span>
+                             <span style="color:#636363;">录播</span>
+                          </div>
+                <div style="width:100%;font-size:12px;color:#f75353;font-weight:bold;">
+                    新学年，新奥数，聚集思维训练，强化课内成绩，构筑全新学习模式！
+                    </div>
+              <div style="width:100%;">
+                              <span style="color:#636363;font-weight:bold;">价格：</span>
+                             <span style="color:#636363;">2750学币</span>
+                          </div>
+                            <div style="width:100%;margin-top:10px;">
+                             
+                                     <span style="color:#636363;font-weight:bold;">学霸优惠价：</span>
+                              <span style="font-size:32px;color:#ff6f00;font-weight:bold;">2750</span>
+                              <span style="color:#ff6000;font-weight:bold;">学币</span>
+                                  
+                                <span style="color:#636363;">（¥275）</span>
+                         
+                             
+                                    <span style="background:#f65353;color:#fff;padding: 6px 18px 6px 18px;font-size:15px;float:right;cursor:pointer;">
+                                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                        <span>加入购物车</span>
+                                    </span>
+                          
+
+                                
+                          </div>
+              </div>
+        <div class="col-md-12 col-xs-12 col-sm-12" style="margin-top:20px;padding: 0px;">
+             <!-- 选项卡菜单-->
+<ul id="myTab" class="nav nav-pills" role="tablist" style="border:1px solid #dddddd;background:#f6f6f6">
+    <li class="active"><a href="#bulletin" role="tab" data-toggle="pill" style="border-radius: 0px;border-right:1px solid #dddddd;">课程介绍</a></li>
+    <li><a href="#rule" role="tab" data-toggle="pill" style="border-radius: 0px;border-right:1px solid #dddddd;">课程表</a></li>
+    <li><a href="#forum" role="tab" data-toggle="pill" style="border-radius: 0px;border-right:1px solid #dddddd;">学员评价</a></li>
+    <li><a href="#security" role="tab" data-toggle="pill" style="border-radius: 0px;border-right:1px solid #dddddd;">收到的鲜花</a></li>
+    <li><a href="#welfare" role="tab" data-toggle="pill" style="border-radius: 0px;border-right:1px solid #dddddd;">讲义下载</a></li>
+</ul>
+     
+<!-- 选项卡面板 -->
+<div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade in active" id="bulletin" style="padding-left:15px;">课程是指学校学生所应学习的学科总和及其进程与安排。课程是对教育的目标、教学内容、教学活动方式的规划和设计，是教学计划、教学大纲等诸多方面实施过程的总和。</div>
+    <div class="tab-pane fade" id="rule" style="padding-left:15px;">课程表</div>
+    <div class="tab-pane fade" id="forum" style="padding-left:15px;">学员评价</div>
+    <div class="tab-pane fade" id="security" style="padding-left:15px;">收到的鲜花</div>
+    <div class="tab-pane fade" id="welfare" style="padding-left:15px;">讲义下载</div>
+</div>
+        </div>
+</div>
+      
+   
+</div>
+    </div>

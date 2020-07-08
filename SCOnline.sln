@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SCOnline", "SCOnline\SCOnline.csproj", "{43BD59C4-78FB-45B2-AB1D-03B208CEE4DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SCOnline.Repository", "SCOnline.Repository\SCOnline.Repository.csproj", "{520D5FD6-BFBF-4939-8DFD-980696C82D0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SCOnline.Service", "SCOnline.Service\SCOnline.Service.csproj", "{934791EC-A7A7-44F6-849F-B9287056C0F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43BD59C4-78FB-45B2-AB1D-03B208CEE4DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43BD59C4-78FB-45B2-AB1D-03B208CEE4DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43BD59C4-78FB-45B2-AB1D-03B208CEE4DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43BD59C4-78FB-45B2-AB1D-03B208CEE4DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{520D5FD6-BFBF-4939-8DFD-980696C82D0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{520D5FD6-BFBF-4939-8DFD-980696C82D0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{520D5FD6-BFBF-4939-8DFD-980696C82D0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{520D5FD6-BFBF-4939-8DFD-980696C82D0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{934791EC-A7A7-44F6-849F-B9287056C0F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{934791EC-A7A7-44F6-849F-B9287056C0F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{934791EC-A7A7-44F6-849F-B9287056C0F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{934791EC-A7A7-44F6-849F-B9287056C0F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
